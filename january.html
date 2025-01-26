@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>January Magazine</title>
+    <style>
+        /* Styles for your page */
+    </style>
+</head>
+<body>
+    <h1>January Magazine</h1>
+
+    <!-- Navigation Back to Home -->
+    <a href="index.html">Back to Home</a>
+    
+    <!-- Tabs for Editorial, Articles, Interviews -->
+    <div class="tabs">
+        <button onclick="switchTab('editorial')">Editorial</button>
+        <button onclick="switchTab('articles')">Articles</button>
+        <button onclick="switchTab('interviews')">Interviews</button>
+    </div>
+
+    <!-- Content Sections for each tab -->
+    <div id="editorial" class="content-section active">
+        <h2>Editorial</h2>
+        <p>Welcome to the January edition!</p>
+    </div>
+    <div id="articles" class="content-section">
+        <h2>Articles</h2>
+        <p>Educational articles written by students and alumni.</p>
+    </div>
+    <div id="interviews" class="content-section">
+        <h2>Interviews</h2>
+        <p>Interviews with alumni and faculty.</p>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show the clicked section
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // Default to showing editorial content when page loads
+        switchTab('editorial');
+    </script>
+</body>
+</html>

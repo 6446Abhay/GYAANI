@@ -1,0 +1,185 @@
+/* Reset */
+body, h1, h2, h3, p, ul, a, input, textarea, button {
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 2px;
+    background-color: #004080;
+    color: green;
+}
+
+header img.logo {
+    height: 4px; /* Adjust the height */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+header h1 {
+    margin-left: 1px;
+    font-size: 1rem;
+}
+
+nav a {
+    color: white;
+    margin: 0 1px;
+    text-decoration: none;
+    font-size: 0.5rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #004080;
+    color: #fff;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: #e6f2ff;
+}
+
+.hero h2 {
+    color: #004080;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    background-color: #004080;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-links a:hover {
+    background-color: #003366;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 1100px;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #004080;
+}
+
+.magazine-links a {
+    display: block;
+    margin: 0.5rem 0;
+    color: #004080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.magazine-links a:hover {
+    text-decoration: underline;
+}
+
+.category {
+    margin-bottom: 1rem;
+}
+
+.category h3 {
+    margin-bottom: 0.5rem;
+}
+
+.category ul li a {
+    color: #004080;
+    text-decoration: none;
+}
+
+.category ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Alumni Connect */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #004080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #003366;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003366;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem 0;
+}
