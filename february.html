@@ -3,31 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>February Magazine</title>
+    <title>January Magazine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .tabs button {
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tabs button:hover {
+            background-color: #003060;
+        }
+
+        .content {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+    <script>
+        function showTab(tab) {
+            document.getElementById("editorial").style.display = "none";
+            document.getElementById("articles").style.display = "none";
+            document.getElementById("interviews").style.display = "none";
+            document.getElementById(tab).style.display = "block";
+        }
+    </script>
 </head>
 <body>
-    <h1>February Magazine</h1>
-
-    <!-- Navigation Links -->
-    <div class="nav">
-        <a href="index.html">Home</a> | 
-        <a href="march.html">Next (March)</a>
+    <h1>January Magazine</h1>
+    <div class="tabs">
+        <button onclick="showTab('editorial')">Editorial</button>
+        <button onclick="showTab('articles')">Articles</button>
+        <button onclick="showTab('interviews')">Interviews</button>
     </div>
 
-    <!-- Content for February -->
-    <section id="editorial">
+    <div id="editorial" class="content">
         <h2>Editorial</h2>
-        <p>This section contains the editorial content for February.</p>
-    </section>
-
-    <section id="articles">
+        <p>Welcome to the February edition...</p>
+    </div>
+    <div id="articles" class="content" style="display: none;">
         <h2>Articles</h2>
-        <p>Educational articles for February.</p>
-    </section>
-
-    <section id="interviews">
+        <p>Here are the featured articles...</p>
+    </div>
+    <div id="interviews" class="content" style="display: none;">
         <h2>Interviews</h2>
-        <p>Interviews with alumni and faculty for February.</p>
-    </section>
+        <p>Read the exclusive interviews...</p>
+    </div>
+    <div>  <a href="march.html">Next (March)</a>
+    </div>
 </body>
 </html>
