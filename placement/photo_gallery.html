@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+        <p>Explore our collection of photos</p>
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <!-- Photo 1 -->
+            <div class="gallery-item">
+                <img src="photo1.jpg" alt="Photo 1">
+                <div class="caption">Caption for Photo 1</div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="gallery-item">
+                <img src="photo2.jpg" alt="Photo 2">
+                <div class="caption">Caption for Photo 2</div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="gallery-item">
+                <img src="photo3.jpg" alt="Photo 3">
+                <div class="caption">Caption for Photo 3</div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="gallery-item">
+                <img src="photo4.jpg" alt="Photo 4">
+                <div class="caption">Caption for Photo 4</div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="gallery-item">
+                <img src="photo5.jpg" alt="Photo 5">
+                <div class="caption">Caption for Photo 5</div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="gallery-item">
+                <img src="photo6.jpg" alt="Photo 6">
+                <div class="caption">Caption for Photo 6</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
