@@ -4,100 +4,357 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYAANI RIE Ajmer</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <a href="#home"><img src="images/logo.png" alt="College Logo" class="logo">
-            <h1>ज्ञाNI</h1>
-        <nav>
-            <ul>
-        <div class="tabs">
-    <button onclick="location.href='home.html'">Home</button>
-    <button onclick="location.href='about-us.html'">About Us</button>
-    <button onclick="location.href='our-team.html'">Our Team</button>
-    <button onclick="location.href='our-services.html'">Our Services</button>
-    <button onclick="location.href='join-us.html'">Join Us</button>
-</div>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h2>Welcome to the Alumni and Magazine Hub</h2>
-        <p>Connecting alumni and showcasing creativity through educational and creative articles.
-
-
-This platform is a dedicated space for the proud alumni of the Regional Institute of Education, Ajmer, to reconnect, collaborate, and celebrate our shared legacy. Whether you're a recent graduate or an experienced professional, this community is here to strengthen the bond we all share with our alma mater.
-
-<p>Our Mission
-To bring together RIE Ajmer alumni from across the globe, fostering meaningful connections and supporting professional growth while contributing to the advancement of education and society.
-
-<p>What We Offer
-
-Networking Opportunities: Reconnect with classmates, build professional relationships, and explore collaborative opportunities.
-Events & Activities: Stay updated on reunions, webinars, workshops, and community programs.
-Mentorship & Support: Guide current students and younger alumni while learning from experienced peers.
-Celebrating Success: Share achievements, milestones, and contributions to inspire the community.
-Join us as we cherish our memories, create new ones, and continue to uphold the values and excellence that RIE Ajmer represents. Together, let’s build a vibrant community that inspires, empowers, and transforms.</p>
-      
-        <div class="social-links">
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Feed</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: left;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
             padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .instagram-widget {
-            width: 80%;
-            max-width: 300px;
-            margin: 0 auto;
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            color: #004080;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        section p {
+            margin: 0;
+            color: #555;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-member {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            padding: 15px;
             border: 1px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
+            border-radius: 8px;
+            text-align: center;
         }
-        iframe {
-            width: 100%;
-            height: 400px;
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin: 0 0 5px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .team-member p {
+            margin: 0;
+            color: #777;
+        }
+
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .tabs button {
+            background-color: #004080;
+            color: white;
             border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tabs button:hover {
+            background-color: #002b5c;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #004080;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .magazine-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .magazine-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .magazine-box a {
+            text-decoration: none;
+            color: #004080;
+        }
+
+        .magazine-box a:hover {
+            text-decoration: underline;
+        }
+
+        .article-categories {
+            display: flex;
+            gap: 20px;
+        }
+
+        .category {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .category h3 {
+            color: #004080;
+            margin-bottom: 10px;
+        }
+
+        .category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .category ul li {
+            margin-bottom: 10px;
+        }
+
+        .category ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .category ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #002b5c;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #002b5c;
         }
     </style>
 </head>
 <body>
-    <h1>Our Instagram Feed</h1>
-    <div class="instagram-widget">
-        <iframe 
-            src="https://www.instagram.com/p/DDmU7F9yS0gyA7Wr_6CvVVakbXSih-KvCFMxvg0/?img_index=2" 
-            frameborder="1" 
-            allowtransparency="false" 
-            scrolling="yes">
-        </iframe>
-    </div>
-</body>
-</html>
+    <header>
+        <h1>ज्ञाNI</h1>
+        <p>Connecting alumni and showcasing creativity through educational and creative articles.</p>
+        <div class="tabs">
+            <button onclick="location.href='home.html'">Home</button>
+            <button onclick="location.href='about-us.html'">About Us</button>
+            <button onclick="location.href='our-team.html'">Our Team</button>
+            <button onclick="location.href='our-services.html'">Our Services</button>
+            <button onclick="location.href='join-us.html'">Join Us</button>
+        </div>
+    </header>
 
-            <a href="https://www.instagram.com/guptaabhay11786/" target="https://www.instagram.com/guptaabhay11786/">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=100017739129973&ref=xav_ig_profile_web" target="https://www.facebook.com/profile.php?id=100017739129973&ref=xav_ig_profile_web">Facebook</a>
+    <section class="hero">
+        <h2>Welcome to the Alumni and Magazine Hub</h2>
+        <p>This platform is a dedicated space for the proud alumni of the Regional Institute of Education, Ajmer, to reconnect, collaborate, and celebrate our shared legacy. Whether you're a recent graduate or an experienced professional, this community is here to strengthen the bond we all share with our alma mater.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/guptaabhay11786/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100017739129973&ref=xav_ig_profile_web" target="_blank">Facebook</a>
             <a href="https://twitter.com" target="_blank">Twitter</a>
         </div>
     </section>
 
-    <!-- home Section -->
-    <section id="home">
-        <h2>About Us</h2>
-        <p>Welcome to the official RIE Ajmer Alumni Group!
+    <div class="container">
+        <section>
+            <h2>About Us</h2>
+            <p>Welcome to the official RIE Ajmer Alumni Group! This platform is a dedicated space for the proud alumni of the Regional Institute of Education, Ajmer, to reconnect, collaborate, and celebrate our shared legacy. Whether you're a recent graduate or an experienced professional, this community is here to strengthen the bond we all share with our alma mater.</p>
+            <p>Our Mission: To bring together RIE Ajmer alumni from across the globe, fostering meaningful connections and supporting professional growth while contributing to the advancement of education and society.</p>
+            <p>What We Offer:</p>
+            <ul>
+                <li>Networking Opportunities: Reconnect with classmates, build professional relationships, and explore collaborative opportunities.</li>
+                <li>Events & Activities: Stay updated on reunions, webinars, workshops, and community programs.</li>
+                <li>Mentorship & Support: Guide current students and younger alumni while learning from experienced peers.</li>
+                <li>Celebrating Success: Share achievements, milestones, and contributions to inspire the community.</li>
+            </ul>
+            <p>Join us as we cherish our memories, create new ones, and continue to uphold the values and excellence that RIE Ajmer represents. Together, let’s build a vibrant community that inspires, empowers, and transforms.</p>
+        </section>
 
-This platform is a dedicated space for the proud alumni of the Regional Institute of Education, Ajmer, to reconnect, collaborate, and celebrate our shared legacy. Whether you're a recent graduate or an experienced professional, this community is here to strengthen the bond we all share with our alma mater.
+        <section>
+            <h2>Monthly Magazines</h2>
+            <div class="magazine-grid">
+                <div class="magazine-box"><a href="january.html">January</a></div>
+                <div class="magazine-box"><a href="february.html">February</a></div>
+                <div class="magazine-box"><a href="march.html">March</a></div>
+                <div class="magazine-box"><a href="april.html">April</a></div>
+                <div class="magazine-box"><a href="may.html">May</a></div>
+                <div class="magazine-box"><a href="june.html">June</a></div>
+                <div class="magazine-box"><a href="july.html">July</a></div>
+                <div class="magazine-box"><a href="august.html">August</a></div>
+                <div class="magazine-box"><a href="september.html">September</a></div>
+                <div class="magazine-box"><a href="october.html">October</a></div>
+                <div class="magazine-box"><a href="november.html">November</a></div>
+                <div class="magazine-box"><a href="december.html">December</a></div>
+            </div>
+        </section>
 
-Our Mission
+        <section>
+            <h2>Articles</h2>
+            <div class="article-categories">
+                <div class="category">
+                    <h3>Educational Articles</h3>
+                    <ul>
+                        <li><a href="#">Future of Artificial Intelligence</a></li>
+                        <li><a href="#">Climate Change and Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>Creative Articles</h3>
+                    <ul>
+                        <li><a href="#">A Poem: Whispers of the Wind</a></li>
+                        <li><a href="#">Short Story: The Lost Path</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Connect with Alumni</h2>
+            <p>Join our growing alumni network and stay connected with your college community.</p>
+            <a href="alumni-registration.html" class="btn">Join Alumni Network</a>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 College Alumni and Magazine Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
 To bring together RIE Ajmer alumni from across the globe, fostering meaningful connections and supporting professional growth while contributing to the advancement of education and society.
 
 What We Offer
